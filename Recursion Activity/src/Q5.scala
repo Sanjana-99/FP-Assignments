@@ -14,8 +14,8 @@ object Q5 extends App{
   }
 
   def evenSum(x:Int):Int={
-    if(x%2==0) return evenSumCal(x)-x else return evenSumCal(x)-x+1
+    if(x%2==0) return evenSumCal(x)-x else return evenSumCal(x)
   }
 
-  println(evenSum(15))
+  println(evenSum(7))
 }

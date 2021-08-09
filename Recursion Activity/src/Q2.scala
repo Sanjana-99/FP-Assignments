@@ -11,10 +11,23 @@ object Q2 extends App{
     case x => prime(p, x + 1)
   }
 
-  def primeSeq(x:Int):Any={
-    if(prime(x)) println(x)
-    primeSeq(x-1)
+  def primeSeq(n:Int):Any={
+
+    if (n > 1) {
+      if (prime(n) == true) {
+        println(n)
+        primeSeq(n - 1)
+      }
+      else{
+	primeSeq(n - 1)
+      }
+    }
+    else {
+      return
+    }
+
   }
 
   primeSeq(10)
 }
+
